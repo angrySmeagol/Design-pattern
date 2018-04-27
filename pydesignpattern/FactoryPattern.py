@@ -1,5 +1,22 @@
 """
 factory
+
+    usage
+    ---------------------------------------
+    circle = ShapeFactory.create('Circle')
+    circle.draw()
+
+        output >>>
+                    ()
+
+    square = ShapeFactory.create('Square')
+    square.draw()
+
+        output >>>
+                    ——
+                   |  |
+                    ——
+
 """
 
 
@@ -7,6 +24,7 @@ class ShapeFactory(object):
 
     class Shape(object):
         def __init__(self):
+            super().__init__()
             pass
 
         def draw(self):
